@@ -5,15 +5,15 @@
 //  Created by Matheus Cardoso on 30/06/20.
 //
 
-#if !os(macOS)
+#if os(macOS)
 
-import UIKit
+import AppKit
 
-fileprivate var renderViews: [EmojiSource: UIImageView] = [:]
+fileprivate var renderViews: [EmojiSource: NSImageView] = [:]
 
 
 // MARK: Public
-extension UITextView {
+extension NSTextView {
     /// Configures this UITextView to display custom emojis.
     ///
     /// - Parameter emojis: A dictionary of emoji keyed by its shortcode.
@@ -22,7 +22,7 @@ extension UITextView {
         self.applyEmojis(emojis, rendering: rendering)
 
         NotificationCenter.default.addObserver(
-            forName: UITextView.textDidChangeNotification,
+            forName: NSTextField.textDidChangeNotification,
             object: self,
             queue: .main
         ) { [weak self] _ in
@@ -32,8 +32,8 @@ extension UITextView {
 }
 
 // MARK: Private
-extension UITextView {
-    private var textContainerView: UIView { subviews[1] }
+extension NSTextView {
+    private var textContainerView: NSView { subviews[1] }
     
     private var customEmojiViews: [EmojiView] {
         textContainerView.subviews.compactMap { $0 as? EmojiView }
@@ -41,59 +41,61 @@ extension UITextView {
     
     private func applyEmojis(_ emojis: [String: EmojiSource], rendering: EmojiRendering) {
         let range = selectedRange
-        let count = attributedText?.string.count ?? 0
-        self.attributedText = attributedText.insertingEmojis(emojis, rendering: rendering)
-        let newCount = attributedText.string.count
+        let count = attributedString().string.count
+        textStorage?.setAttributedString(attributedString().insertingEmojis(emojis, rendering: rendering))
+        let newCount = attributedString().string.count
         customEmojiViews.forEach { $0.removeFromSuperview() }
         addEmojiImagesIfNeeded(rendering: rendering)
         selectedRange = NSRange(location: range.location - (count - newCount), length: range.length)
     }
     
     private func addEmojiImagesIfNeeded(rendering: EmojiRendering) {
-        attributedText.enumerateAttributes(in: NSRange(location: 0, length: attributedText.length), options: [], using: { attributes, crange, _ in
+        attributedString().enumerateAttributes(in: NSRange(location: 0, length: attributedString().length), options: [], using: { attributes, crange, _ in
             DispatchQueue.main.async {
                 guard
                     let emojiAttachment = attributes[NSAttributedString.Key.attachment] as? NSTextAttachment,
-                    let position1 = self.position(from: self.beginningOfDocument, offset: crange.location),
-                    let position2 = self.position(from: position1, offset: crange.length),
-                    let range = self.textRange(from: position1, to: position2),
+//                    let position1 = self.position(from: self.beginningOfDocument, offset: crange.location),
+//                    let position2 = self.position(from: position1, offset: crange.length),
+//                    let range = self.textRange(from: position1, to: position2),
                     let emojiData = emojiAttachment.contents,
                     let emoji = try? JSONDecoder().decode(EmojiSource.self, from: emojiData)
                 else {
                     return
                 }
                 
-                let rect = self.firstRect(for: range)
+                let rect = self.firstRect(forCharacterRange: crange, actualRange: nil)
 
                 let emojiView = EmojiView(frame: rect)
-                emojiView.backgroundColor = self.backgroundColor
-                emojiView.isUserInteractionEnabled = false
+                emojiView.layer?.backgroundColor = self.backgroundColor.cgColor
+//                emojiView.isUserInteractionEnabled = false
                 
                 switch emoji {
                 case let .character(character):
-                    emojiView.label.text = character
+                    emojiView.label.stringValue = character
                 case let .imageUrl(imageUrl):
                     guard renderViews[emoji] == nil else {
                         break
                     }
                     
                     if let url = URL(string: imageUrl) {
-                        let renderView = UIImageView(frame: rect)
+                        let renderView = NSImageView(frame: rect)
                         renderView.setFromURL(url, rendering: rendering)
                         renderViews[emoji] = renderView
-                        self.window?.addSubview(renderView)
-                        renderView.alpha = 0
+                        self.window?.contentView?.addSubview(renderView)
+//                        self.window?.addSubview(renderView)
+                        renderView.alphaValue = 0
                     }
                 case let .imageAsset(imageAsset):
                     guard renderViews[emoji] == nil else {
                         break
                     }
                     
-                    let renderView = UIImageView(frame: rect)
+                    let renderView = NSImageView(frame: rect)
                     renderView.setFromAsset(imageAsset, rendering: rendering)
                     renderViews[emoji] = renderView
-                    self.window?.addSubview(renderView)
-                    renderView.alpha = 0
+                    self.window?.contentView?.addSubview(renderView)
+//                        self.window?.addSubview(renderView)
+                    renderView.alphaValue = 0
                 case .alias:
                     break
                 }

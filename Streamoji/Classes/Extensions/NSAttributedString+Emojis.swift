@@ -5,7 +5,11 @@
 //  Created by Matheus Cardoso on 30/06/20.
 //
 
+#if os(macOS)
+import AppKit
+#else
 import UIKit
+#endif
 
 extension NSAttributedString {
     internal func insertingEmojis(
@@ -60,7 +64,13 @@ extension NSMutableAttributedString {
         for range in ranges {
             let transformedRange = NSRange(location: range.location - offset, length: range.length)
             let replacementString = self.attributedSubstring(from: transformedRange)
+            
+            #if os(macOS)
+            let font = replacementString.attribute(.font, at: 0, effectiveRange: .none) as? NSFont
+            #else
             let font = replacementString.attribute(.font, at: 0, effectiveRange: .none) as? UIFont
+            #endif
+            
             let paragraphStyle = replacementString.attribute(.paragraphStyle, at: 0, effectiveRange: .none) as? NSParagraphStyle
             
             let emojiAttachment = NSTextAttachment()

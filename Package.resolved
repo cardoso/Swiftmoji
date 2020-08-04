@@ -12,11 +12,11 @@
       },
       {
         "package": "SwiftyGif",
-        "repositoryURL": "https://github.com/kirualex/SwiftyGif.git",
+        "repositoryURL": "https://github.com/carlo-/SwiftyGif.git",
         "state": {
-          "branch": null,
-          "revision": "420d12cba8338b03993f73a72c1f6b70d5273cf2",
-          "version": "5.3.0"
+          "branch": "macos-support",
+          "revision": "a9bd41cbfa32a524858ad35c12f76cdc4a26cd10",
+          "version": null
         }
       }
     ]
