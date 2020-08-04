@@ -20,6 +20,7 @@ class ViewController: NSViewController {
             "test": .character("😇"),
             "let_me_in": .imageUrl("https://github.com/GetStream/Streamoji/blob/main/meta/emojis/let_me_in.gif?raw=true"),
             "hey": .imageUrl("https://media.giphy.com/media/l2QEdvfq7bCCk6qOI/giphy.gif"),
+            "doge": .imageAsset("doge.png"),
         ])
     }
 }

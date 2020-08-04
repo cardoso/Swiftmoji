@@ -21,6 +21,16 @@
 		239CA92324D99DF400777052 /* EmojiRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91C24D99DF400777052 /* EmojiRendering.swift */; };
 		239CA92424D99DF400777052 /* EmojiSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91D24D99DF400777052 /* EmojiSource.swift */; };
 		239CA92824D99E1200777052 /* libStreamoji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA90B24D99DD300777052 /* libStreamoji.a */; };
+		239CA93424D9C8F200777052 /* baby-yoda-soup.gif in Resources */ = {isa = PBXBuildFile; fileRef = 239CA92A24D9C8F200777052 /* baby-yoda-soup.gif */; };
+		239CA93524D9C8F200777052 /* party_parrot.gif in Resources */ = {isa = PBXBuildFile; fileRef = 239CA92B24D9C8F200777052 /* party_parrot.gif */; };
+		239CA93624D9C8F200777052 /* doge.png in Resources */ = {isa = PBXBuildFile; fileRef = 239CA92C24D9C8F200777052 /* doge.png */; };
+		239CA93724D9C8F200777052 /* excuseme.gif in Resources */ = {isa = PBXBuildFile; fileRef = 239CA92D24D9C8F200777052 /* excuseme.gif */; };
+		239CA93824D9C8F200777052 /* carlton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 239CA92E24D9C8F200777052 /* carlton.gif */; };
+		239CA93924D9C8F200777052 /* this-is-fine-fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = 239CA92F24D9C8F200777052 /* this-is-fine-fire.gif */; };
+		239CA93A24D9C8F200777052 /* homer-disappear.gif in Resources */ = {isa = PBXBuildFile; fileRef = 239CA93024D9C8F200777052 /* homer-disappear.gif */; };
+		239CA93B24D9C8F200777052 /* let_me_in.gif in Resources */ = {isa = PBXBuildFile; fileRef = 239CA93124D9C8F200777052 /* let_me_in.gif */; };
+		239CA93C24D9C8F200777052 /* bananadance.gif in Resources */ = {isa = PBXBuildFile; fileRef = 239CA93224D9C8F200777052 /* bananadance.gif */; };
+		239CA93D24D9C8F200777052 /* what.png in Resources */ = {isa = PBXBuildFile; fileRef = 239CA93324D9C8F200777052 /* what.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,16 @@
 		239CA91B24D99DF400777052 /* EmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		239CA91C24D99DF400777052 /* EmojiRendering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRendering.swift; sourceTree = "<group>"; };
 		239CA91D24D99DF400777052 /* EmojiSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiSource.swift; sourceTree = "<group>"; };
+		239CA92A24D9C8F200777052 /* baby-yoda-soup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "baby-yoda-soup.gif"; sourceTree = "<group>"; };
+		239CA92B24D9C8F200777052 /* party_parrot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = party_parrot.gif; sourceTree = "<group>"; };
+		239CA92C24D9C8F200777052 /* doge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doge.png; sourceTree = "<group>"; };
+		239CA92D24D9C8F200777052 /* excuseme.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = excuseme.gif; sourceTree = "<group>"; };
+		239CA92E24D9C8F200777052 /* carlton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carlton.gif; sourceTree = "<group>"; };
+		239CA92F24D9C8F200777052 /* this-is-fine-fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "this-is-fine-fire.gif"; sourceTree = "<group>"; };
+		239CA93024D9C8F200777052 /* homer-disappear.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "homer-disappear.gif"; sourceTree = "<group>"; };
+		239CA93124D9C8F200777052 /* let_me_in.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = let_me_in.gif; sourceTree = "<group>"; };
+		239CA93224D9C8F200777052 /* bananadance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bananadance.gif; sourceTree = "<group>"; };
+		239CA93324D9C8F200777052 /* what.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = what.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,7 @@
 				239CA8F224D99C0D00777052 /* Main.storyboard */,
 				239CA8F524D99C0D00777052 /* Info.plist */,
 				239CA8F624D99C0D00777052 /* StreamojiMacExample.entitlements */,
+				239CA92924D9C8F200777052 /* emojis */,
 			);
 			path = StreamojiMacExample;
 			sourceTree = "<group>";
@@ -142,6 +163,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		239CA92924D9C8F200777052 /* emojis */ = {
+			isa = PBXGroup;
+			children = (
+				239CA92A24D9C8F200777052 /* baby-yoda-soup.gif */,
+				239CA92B24D9C8F200777052 /* party_parrot.gif */,
+				239CA92C24D9C8F200777052 /* doge.png */,
+				239CA92D24D9C8F200777052 /* excuseme.gif */,
+				239CA92E24D9C8F200777052 /* carlton.gif */,
+				239CA92F24D9C8F200777052 /* this-is-fine-fire.gif */,
+				239CA93024D9C8F200777052 /* homer-disappear.gif */,
+				239CA93124D9C8F200777052 /* let_me_in.gif */,
+				239CA93224D9C8F200777052 /* bananadance.gif */,
+				239CA93324D9C8F200777052 /* what.png */,
+			);
+			name = emojis;
+			path = ../../../meta/emojis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,8 +280,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239CA93824D9C8F200777052 /* carlton.gif in Resources */,
+				239CA93424D9C8F200777052 /* baby-yoda-soup.gif in Resources */,
+				239CA93624D9C8F200777052 /* doge.png in Resources */,
 				239CA8F124D99C0D00777052 /* Assets.xcassets in Resources */,
+				239CA93924D9C8F200777052 /* this-is-fine-fire.gif in Resources */,
+				239CA93B24D9C8F200777052 /* let_me_in.gif in Resources */,
+				239CA93724D9C8F200777052 /* excuseme.gif in Resources */,
+				239CA93A24D9C8F200777052 /* homer-disappear.gif in Resources */,
+				239CA93C24D9C8F200777052 /* bananadance.gif in Resources */,
 				239CA8F424D99C0D00777052 /* Main.storyboard in Resources */,
+				239CA93524D9C8F200777052 /* party_parrot.gif in Resources */,
+				239CA93D24D9C8F200777052 /* what.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

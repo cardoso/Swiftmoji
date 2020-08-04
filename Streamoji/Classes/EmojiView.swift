@@ -106,7 +106,6 @@ internal final class EmojiView: NSView {
         label.backgroundColor = .clear
         label.isEditable = false
         label.isBezeled = false
-        label.font = .systemFont(ofSize: frame.width/1.1)
         label.maximumNumberOfLines = 0
         addSubview(imageView)
         addSubview(label)
@@ -116,6 +115,7 @@ internal final class EmojiView: NSView {
         super.layout()
         label.frame = self.bounds
         imageView.frame = self.bounds
+        label.font = .systemFont(ofSize: label.bounds.width / 1.3)
     }
 }
 
