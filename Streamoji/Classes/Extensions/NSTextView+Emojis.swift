@@ -33,7 +33,7 @@ extension NSTextView {
 
 // MARK: Private
 extension NSTextView {
-    private var textContainerView: NSView { subviews[1] }
+    private var textContainerView: NSView { self }
     
     private var customEmojiViews: [EmojiView] {
         textContainerView.subviews.compactMap { $0 as? EmojiView }
