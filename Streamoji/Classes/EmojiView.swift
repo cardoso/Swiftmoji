@@ -101,6 +101,9 @@ internal final class EmojiView: NSView {
 
     private func commonInit() {
 //        imageView.contentMode = .scaleAspectFit
+        
+        label.drawsBackground = true
+        label.backgroundColor = .clear
         label.isEditable = false
         label.isBezeled = false
         label.font = .systemFont(ofSize: frame.width/1.1)

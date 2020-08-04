@@ -11,6 +11,10 @@ import AppKit
 import UIKit
 #endif
 
+class EmojiTextAttachment: NSTextAttachment {
+    var emojiData: Data?
+}
+
 extension NSAttributedString {
     internal func insertingEmojis(
         _ emojis: [String: EmojiSource],
@@ -73,9 +77,17 @@ extension NSMutableAttributedString {
             
             let paragraphStyle = replacementString.attribute(.paragraphStyle, at: 0, effectiveRange: .none) as? NSParagraphStyle
             
-            let emojiAttachment = NSTextAttachment()
+            let emojiAttachment = EmojiTextAttachment()
+            
+            #if os(macOS)
+            // Workaround to possible macOS bug; bounds are ignored if image is nil.
+            emojiAttachment.image = NSImage()
+            #endif
+            
             let fontSize = (font?.pointSize ?? 22.0) * CGFloat(rendering.scale)
-            emojiAttachment.bounds = CGRect(x: 0, y: 0, width: fontSize, height: fontSize)
+            let capHeight = (font?.capHeight ?? 22.0) * CGFloat(rendering.scale)
+            let yOffset = (capHeight - fontSize) / 2.0
+            emojiAttachment.bounds = CGRect(x: 0, y: yOffset, width: fontSize, height: fontSize)
             
             let emojiAttributedString = NSMutableAttributedString(attachment: emojiAttachment)
             
@@ -91,7 +103,12 @@ extension NSMutableAttributedString {
                     emoji = emojis[alias] ?? emoji
                 }
                 
-                emojiAttachment.contents = try! JSONEncoder().encode(emoji)
+                let data = try! JSONEncoder().encode(emoji)
+                emojiAttachment.emojiData = data
+                #if !os(macOS)
+                emojiAttachment.contents = data
+                #endif
+                
                 self.replaceCharacters(
                     in: transformedRange,
                     with: emojiAttributedString
