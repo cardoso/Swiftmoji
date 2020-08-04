@@ -22,7 +22,7 @@ extension NSTextView {
         self.applyEmojis(emojis, rendering: rendering)
 
         NotificationCenter.default.addObserver(
-            forName: NSTextField.textDidChangeNotification,
+            forName: NSText.didChangeNotification,
             object: self,
             queue: .main
         ) { [weak self] _ in
