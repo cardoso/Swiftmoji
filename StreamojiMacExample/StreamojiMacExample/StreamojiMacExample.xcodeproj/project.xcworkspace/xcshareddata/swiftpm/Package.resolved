@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Nuke",
+        "repositoryURL": "https://github.com/kean/Nuke.git",
+        "state": {
+          "branch": null,
+          "revision": "6001489d22e5f41a4956c1b6cd4cf7cbe8f44dff",
+          "version": "8.4.1"
+        }
+      },
+      {
+        "package": "SwiftyGif",
+        "repositoryURL": "https://github.com/carlo-/SwiftyGif.git",
+        "state": {
+          "branch": "macos-support",
+          "revision": "a9bd41cbfa32a524858ad35c12f76cdc4a26cd10",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		239CA8ED24D99C0C00777052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA8EC24D99C0C00777052 /* AppDelegate.swift */; };
+		239CA8EF24D99C0C00777052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA8EE24D99C0C00777052 /* ViewController.swift */; };
+		239CA8F124D99C0D00777052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239CA8F024D99C0D00777052 /* Assets.xcassets */; };
+		239CA8F424D99C0D00777052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239CA8F224D99C0D00777052 /* Main.storyboard */; };
+		239CA90324D99D9300777052 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 239CA90224D99D9300777052 /* Nuke */; };
+		239CA90624D99DA900777052 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 239CA90524D99DA900777052 /* SwiftyGif */; };
+		239CA91E24D99DF400777052 /* NSAttributedString+Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91724D99DF400777052 /* NSAttributedString+Emojis.swift */; };
+		239CA91F24D99DF400777052 /* NSTextView+Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91824D99DF400777052 /* NSTextView+Emojis.swift */; };
+		239CA92024D99DF400777052 /* UITextView+Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91924D99DF400777052 /* UITextView+Emojis.swift */; };
+		239CA92124D99DF400777052 /* String+CodeRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91A24D99DF400777052 /* String+CodeRanges.swift */; };
+		239CA92224D99DF400777052 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91B24D99DF400777052 /* EmojiView.swift */; };
+		239CA92324D99DF400777052 /* EmojiRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91C24D99DF400777052 /* EmojiRendering.swift */; };
+		239CA92424D99DF400777052 /* EmojiSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA91D24D99DF400777052 /* EmojiSource.swift */; };
+		239CA92824D99E1200777052 /* libStreamoji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA90B24D99DD300777052 /* libStreamoji.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		239CA92524D99E0D00777052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239CA8E124D99C0C00777052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 239CA90A24D99DD300777052;
+			remoteInfo = Streamoji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		239CA8E924D99C0C00777052 /* StreamojiMacExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamojiMacExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		239CA8EC24D99C0C00777052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		239CA8EE24D99C0C00777052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		239CA8F024D99C0D00777052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		239CA8F324D99C0D00777052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		239CA8F524D99C0D00777052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		239CA8F624D99C0D00777052 /* StreamojiMacExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StreamojiMacExample.entitlements; sourceTree = "<group>"; };
+		239CA90B24D99DD300777052 /* libStreamoji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStreamoji.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		239CA91524D99DF400777052 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		239CA91724D99DF400777052 /* NSAttributedString+Emojis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Emojis.swift"; sourceTree = "<group>"; };
+		239CA91824D99DF400777052 /* NSTextView+Emojis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextView+Emojis.swift"; sourceTree = "<group>"; };
+		239CA91924D99DF400777052 /* UITextView+Emojis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Emojis.swift"; sourceTree = "<group>"; };
+		239CA91A24D99DF400777052 /* String+CodeRanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CodeRanges.swift"; sourceTree = "<group>"; };
+		239CA91B24D99DF400777052 /* EmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		239CA91C24D99DF400777052 /* EmojiRendering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRendering.swift; sourceTree = "<group>"; };
+		239CA91D24D99DF400777052 /* EmojiSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		239CA8E624D99C0C00777052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239CA92824D99E1200777052 /* libStreamoji.a in Frameworks */,
+				239CA90324D99D9300777052 /* Nuke in Frameworks */,
+				239CA90624D99DA900777052 /* SwiftyGif in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239CA90924D99DD300777052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		239CA8E024D99C0C00777052 = {
+			isa = PBXGroup;
+			children = (
+				239CA8EB24D99C0C00777052 /* StreamojiMacExample */,
+				239CA90C24D99DD300777052 /* Streamoji */,
+				239CA8EA24D99C0C00777052 /* Products */,
+				239CA92724D99E1200777052 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		239CA8EA24D99C0C00777052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				239CA8E924D99C0C00777052 /* StreamojiMacExample.app */,
+				239CA90B24D99DD300777052 /* libStreamoji.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		239CA8EB24D99C0C00777052 /* StreamojiMacExample */ = {
+			isa = PBXGroup;
+			children = (
+				239CA8EC24D99C0C00777052 /* AppDelegate.swift */,
+				239CA8EE24D99C0C00777052 /* ViewController.swift */,
+				239CA8F024D99C0D00777052 /* Assets.xcassets */,
+				239CA8F224D99C0D00777052 /* Main.storyboard */,
+				239CA8F524D99C0D00777052 /* Info.plist */,
+				239CA8F624D99C0D00777052 /* StreamojiMacExample.entitlements */,
+			);
+			path = StreamojiMacExample;
+			sourceTree = "<group>";
+		};
+		239CA90C24D99DD300777052 /* Streamoji */ = {
+			isa = PBXGroup;
+			children = (
+				239CA91424D99DF400777052 /* Classes */,
+			);
+			path = Streamoji;
+			sourceTree = "<group>";
+		};
+		239CA91424D99DF400777052 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				239CA91524D99DF400777052 /* .gitkeep */,
+				239CA91624D99DF400777052 /* Extensions */,
+				239CA91B24D99DF400777052 /* EmojiView.swift */,
+				239CA91C24D99DF400777052 /* EmojiRendering.swift */,
+				239CA91D24D99DF400777052 /* EmojiSource.swift */,
+			);
+			name = Classes;
+			path = ../../../Streamoji/Classes;
+			sourceTree = "<group>";
+		};
+		239CA91624D99DF400777052 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				239CA91724D99DF400777052 /* NSAttributedString+Emojis.swift */,
+				239CA91824D99DF400777052 /* NSTextView+Emojis.swift */,
+				239CA91924D99DF400777052 /* UITextView+Emojis.swift */,
+				239CA91A24D99DF400777052 /* String+CodeRanges.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		239CA92724D99E1200777052 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		239CA90724D99DD300777052 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		239CA8E824D99C0C00777052 /* StreamojiMacExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239CA8F924D99C0D00777052 /* Build configuration list for PBXNativeTarget "StreamojiMacExample" */;
+			buildPhases = (
+				239CA8E524D99C0C00777052 /* Sources */,
+				239CA8E624D99C0C00777052 /* Frameworks */,
+				239CA8E724D99C0C00777052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				239CA92624D99E0D00777052 /* PBXTargetDependency */,
+			);
+			name = StreamojiMacExample;
+			packageProductDependencies = (
+				239CA90224D99D9300777052 /* Nuke */,
+				239CA90524D99DA900777052 /* SwiftyGif */,
+			);
+			productName = StreamojiMacExample;
+			productReference = 239CA8E924D99C0C00777052 /* StreamojiMacExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		239CA90A24D99DD300777052 /* Streamoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 239CA91124D99DD300777052 /* Build configuration list for PBXNativeTarget "Streamoji" */;
+			buildPhases = (
+				239CA90724D99DD300777052 /* Headers */,
+				239CA90824D99DD300777052 /* Sources */,
+				239CA90924D99DD300777052 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Streamoji;
+			productName = Streamoji;
+			productReference = 239CA90B24D99DD300777052 /* libStreamoji.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		239CA8E124D99C0C00777052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					239CA8E824D99C0C00777052 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					239CA90A24D99DD300777052 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 239CA8E424D99C0C00777052 /* Build configuration list for PBXProject "StreamojiMacExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 239CA8E024D99C0C00777052;
+			packageReferences = (
+				239CA90124D99D9300777052 /* XCRemoteSwiftPackageReference "Nuke" */,
+				239CA90424D99DA900777052 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+			);
+			productRefGroup = 239CA8EA24D99C0C00777052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				239CA8E824D99C0C00777052 /* StreamojiMacExample */,
+				239CA90A24D99DD300777052 /* Streamoji */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		239CA8E724D99C0C00777052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239CA8F124D99C0D00777052 /* Assets.xcassets in Resources */,
+				239CA8F424D99C0D00777052 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		239CA8E524D99C0C00777052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239CA8EF24D99C0C00777052 /* ViewController.swift in Sources */,
+				239CA8ED24D99C0C00777052 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		239CA90824D99DD300777052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239CA92424D99DF400777052 /* EmojiSource.swift in Sources */,
+				239CA92024D99DF400777052 /* UITextView+Emojis.swift in Sources */,
+				239CA91E24D99DF400777052 /* NSAttributedString+Emojis.swift in Sources */,
+				239CA91F24D99DF400777052 /* NSTextView+Emojis.swift in Sources */,
+				239CA92124D99DF400777052 /* String+CodeRanges.swift in Sources */,
+				239CA92224D99DF400777052 /* EmojiView.swift in Sources */,
+				239CA92324D99DF400777052 /* EmojiRendering.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		239CA92624D99E0D00777052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 239CA90A24D99DD300777052 /* Streamoji */;
+			targetProxy = 239CA92524D99E0D00777052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		239CA8F224D99C0D00777052 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				239CA8F324D99C0D00777052 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		239CA8F724D99C0D00777052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		239CA8F824D99C0D00777052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		239CA8FA24D99C0D00777052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StreamojiMacExample/StreamojiMacExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = StreamojiMacExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.carlorapisarda.StreamojiMacExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		239CA8FB24D99C0D00777052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StreamojiMacExample/StreamojiMacExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = StreamojiMacExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.carlorapisarda.StreamojiMacExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		239CA91224D99DD300777052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		239CA91324D99DD300777052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57W7KG4A63;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		239CA8E424D99C0C00777052 /* Build configuration list for PBXProject "StreamojiMacExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239CA8F724D99C0D00777052 /* Debug */,
+				239CA8F824D99C0D00777052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		239CA8F924D99C0D00777052 /* Build configuration list for PBXNativeTarget "StreamojiMacExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239CA8FA24D99C0D00777052 /* Debug */,
+				239CA8FB24D99C0D00777052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		239CA91124D99DD300777052 /* Build configuration list for PBXNativeTarget "Streamoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239CA91224D99DD300777052 /* Debug */,
+				239CA91324D99DD300777052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		239CA90124D99D9300777052 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 8.4.1;
+			};
+		};
+		239CA90424D99DA900777052 /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carlo-/SwiftyGif.git";
+			requirement = {
+				branch = "macos-support";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		239CA90224D99D9300777052 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 239CA90124D99D9300777052 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		239CA90524D99DA900777052 /* SwiftyGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 239CA90424D99DA900777052 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			productName = SwiftyGif;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 239CA8E124D99C0C00777052 /* Project object */;
+}
