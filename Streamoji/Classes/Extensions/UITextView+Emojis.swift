@@ -5,6 +5,8 @@
 //  Created by Matheus Cardoso on 30/06/20.
 //
 
+#if !os(macOS)
+
 import UIKit
 
 fileprivate var renderViews: [EmojiSource: UIImageView] = [:]
@@ -189,3 +191,5 @@ extension UITextView {
         })
     }
 }
+
+#endif

@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Streamoji",
-    platforms: [.iOS(.v10)],
+    platforms: [.iOS(.v10), .macOS(.v10_14)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -16,7 +16,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/kean/Nuke.git", from: "8.4.0"),
-        .package(url: "https://github.com/kirualex/SwiftyGif.git", from: "5.2.0"),
+        .package(url: "https://github.com/carlo-/SwiftyGif.git", .branch("macos-support")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
